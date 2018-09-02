@@ -14,23 +14,15 @@
     if (isset($_GET['strategy'])) {
         $strategy = $_GET['strategy'];
 
-        if ($strategy == 'Smart') {
-            unset($response['reason']);
-            $response['response'] = true;
-            $response['pid'] = uniqid('', true);
-        }
-        elseif ($strategy == 'Random') {
+        if ($strategy == 'Smart' or $strategy == 'Random') {
             unset($response['reason']);
             $response['response'] = true;
             $response['pid'] = uniqid('', true);
         }
         else
             $response['reason'] = 'Unknown strategy';
+    }
 
-        echo json_encode($response);
-    }
-    else {
-        echo json_encode($response);
-    }
+    echo json_encode($response);
 ?>
 
