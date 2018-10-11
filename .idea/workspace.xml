@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e45ab45-1aac-4eb7-b1be-27c69142e543" name="Default Changelist" comment="09/02/18 - Implemented board checking logic, started game state storage.&#10;&#10;Finished method in the following (need documentation):&#10;+ /play/index.php&#10;&#10;- Finished board checking logic for rows, need to implement stack to store cells of winning row.&#10;- Finished method that checks for valid pid file in file system.&#10;&#10;TODO:&#10;- Finish functionality of GET request on /play/index.php&#10;- Implement Random and Smart classes to perform play functionality.&#10;- Implement game state storage in file system.">
+    <list default="true" id="3e45ab45-1aac-4eb7-b1be-27c69142e543" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/info/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/new/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/play/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/play/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,33 +72,40 @@
     <session id="-291407089">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.10" value="6" />
+          <entry key="project.open.time.11" value="5" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="3616" />
+          <entry key="php" value="14056" />
           <entry key="txt" value="422" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="3616" />
+          <entry key="PHP" value="14056" />
           <entry key="PLAIN_TEXT" value="422" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="7" />
+          <entry key="md" value="1" />
+          <entry key="php" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="7" />
+          <entry key="Markdown" value="1" />
+          <entry key="PHP" value="24" />
         </counts>
       </usages-collector>
     </session>
@@ -104,19 +113,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/play/index.php">
+        <entry file="file://$PROJECT_DIR$/info/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            <state relative-caret-position="105">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -124,13 +124,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="143">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/play/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/games/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>echo</find>
+      <find>cwd</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,11 +164,12 @@
       <list>
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/new.php" />
-        <option value="$PROJECT_DIR$/info/index.php" />
-        <option value="$PROJECT_DIR$/new/index.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/play/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/info/index.php" />
+        <option value="$PROJECT_DIR$/games/index.php" />
+        <option value="$PROJECT_DIR$/new/index.php" />
+        <option value="$PROJECT_DIR$/play/index.php" />
       </list>
     </option>
   </component>
@@ -158,9 +183,11 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="35" />
+    <option name="y" value="23" />
+    <option name="width" value="1245" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -174,6 +201,16 @@
             <path>
               <item name="Connect4-WebApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Connect4-WebApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Connect4-WebApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Connect4-WebApp" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Connect4-WebApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Connect4-WebApp" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Connect4-WebApp" type="b2602c69:ProjectViewProjectNode" />
@@ -200,7 +237,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -221,7 +258,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Host_C4" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/" port="5000">
+    <configuration name="Host_C4" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" activateToolWindowBeforeRun="false" document_root="$PROJECT_DIR$/" port="5000">
       <CommandLine workingDirectory="$PROJECT_DIR$" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2" />
@@ -256,7 +293,30 @@
       <workItem from="1535763840555" duration="8952000" />
       <workItem from="1535782837345" duration="792000" />
       <workItem from="1535824737738" duration="2830000" />
-      <workItem from="1535911967004" duration="5728000" />
+      <workItem from="1535911967004" duration="19342000" />
+      <workItem from="1535958647569" duration="339000" />
+      <workItem from="1535988315970" duration="350000" />
+      <workItem from="1536033541628" duration="2910000" />
+      <workItem from="1536079483320" duration="2071000" />
+      <workItem from="1536097057236" duration="151000" />
+      <workItem from="1536097486126" duration="1384000" />
+      <workItem from="1536632062500" duration="289000" />
+      <workItem from="1536860331162" duration="625000" />
+      <workItem from="1536862334665" duration="202000" />
+      <workItem from="1537291574084" duration="1483000" />
+      <workItem from="1537344310251" duration="2127000" />
+      <workItem from="1537907582290" duration="444000" />
+      <workItem from="1538067180646" duration="1134000" />
+      <workItem from="1538496637410" duration="100000" />
+      <workItem from="1538496874558" duration="522000" />
+      <workItem from="1538598269063" duration="1060000" />
+      <workItem from="1538610319311" duration="316000" />
+      <workItem from="1539103122857" duration="1000" />
+      <workItem from="1539103370470" duration="1000" />
+      <workItem from="1539204226300" duration="422000" />
+      <workItem from="1539204714332" duration="1629000" />
+      <workItem from="1539245522710" duration="455000" />
+      <workItem from="1539275749091" duration="1803000" />
     </task>
     <task id="LOCAL-00001" summary="08/31/18 - Implemented Response Pages&#10;&#10;Finished Pages, need documentation&#10;+ /new/index.php&#10;+ /info/index.php&#10;&#10;TODO:&#10;- Finish functionality of GET request on /play/index.php&#10;- Implement Random and Smart classes to perform play functionality&#10;- Figure out how to pass and store pid and strategy choice to /play/index.php to return move response.">
       <created>1535779272573</created>
@@ -265,11 +325,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535779272573</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="09/02/18 - Implemented board checking logic, started game state storage.&#10;&#10;Finished method in the following (need documentation):&#10;+ /play/index.php&#10;&#10;- Finished board checking logic for rows, need to implement stack to store cells of winning row.&#10;- Finished method that checks for valid pid file in file system.&#10;&#10;TODO:&#10;- Finish functionality of GET request on /play/index.php&#10;- Implement Random and Smart classes to perform play functionality.&#10;- Implement game state storage in file system.">
+      <created>1535919071124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535919071124</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19926000" />
+    <option name="totallyTimeSpent" value="53358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -281,25 +348,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="35" y="23" width="1245" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23667206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32668328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29178083" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972136" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32972136" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -319,10 +386,18 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test" />
-    <entry file="file://$PROJECT_DIR$/info/index.php">
+    <entry file="file://$PROJECT_DIR$/test.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state relative-caret-position="235">
+          <caret line="520" column="23" selection-start-line="520" selection-start-column="23" selection-end-line="520" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5945">
+          <caret line="723" column="9" selection-start-line="723" selection-start-column="9" selection-end-line="723" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -334,31 +409,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
+    <entry file="file://$PROJECT_DIR$/index.php" />
+    <entry file="file://$PROJECT_DIR$/info/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="105">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="143">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/play/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="351">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/games/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
